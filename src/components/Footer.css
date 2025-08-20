@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root {
+  --bg:#0f0f15;
+  --panel:#12121a;
+  --muted:#bfc0c6;
+  --white:#ffffff;
+  --accent:#2f3138;
+  --box-bg: rgba(255,255,255,0.04);
+  --highlight:#00acee;
+}
+
+/* Footer Base */
+.ec-footer {
+  background: var(--bg);
+  color: var(--white);
+  font-family: "Poppins", system-ui, sans-serif;
+  margin-top: 50px;
+}
+
+/* Layout Grid */
+.ec-footer__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 60px 36px;
+  display: grid;
+  grid-template-columns: 320px 160px 160px 1fr;
+  gap: 50px;
+}
+
+/* Brand */
+.brand-title {
+  margin: 0 0 14px 0;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.brand-desc {
+  color: var(--muted);
+  font-size: 15px;
+  line-height: 1.7;
+  margin: 0 0 22px 0;
+  max-width: 280px;
+}
+
+/* Socials */
+.social-row {
+  display: flex;
+  gap: 12px;
+}
+
+.social-circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--panel);
+  color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  transition: all 200ms ease;
+}
+
+.social-circle:hover {
+  background: #23232b;
+  color: var(--highlight);
+  transform: translateY(-3px);
+}
+
+/* Column Titles */
+.col-title {
+  margin: 6px 0 18px 0;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+}
+
+/* Links */
+.ec-footer__links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ec-footer__links li {
+  margin-bottom: 10px;
+}
+
+.ec-footer__links a {
+  color: #dfe0e5;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 150ms ease;
+}
+
+.ec-footer__links a:hover {
+  color: var(--white);
+}
+
+/* Contact */
+.contact-info {
+  font-size: 14px;
+  color: var(--muted);
+  line-height: 1.8;
+}
+
+.contact-info a {
+  color: var(--highlight);
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  text-decoration: underline;
+}
+
+/* Footer Bottom */
+.ec-footer__bottom {
+  padding: 20px 36px;
+  display: flex;
+  justify-content: center;
+}
+
+.ec-footer__bottom-box {
+  background: var(--box-bg);
+  color: #c9cbd0;
+  padding: 12px 20px;
+  border-radius: 6px;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.2px;
+}
+
+/* 📱 Responsive Layout */
+@media (max-width: 980px) {
+  .ec-footer__inner {
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+    padding: 50px 28px;
+  }
+  .ec-footer__brand {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .ec-footer__inner {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 40px 20px;
+  }
+  .brand-desc {
+    max-width: 100%;
+  }
+  .ec-footer__bottom-box {
+    font-size: 12px;
+    padding: 10px 16px;
+  }
+}

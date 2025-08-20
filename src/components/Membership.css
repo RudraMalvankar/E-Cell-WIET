@@ -1,0 +1,181 @@
+/* === Base Container === */
+.membership-container {
+  position: relative;
+  background: #fff;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+}
+
+/* === Overlay (Locked Mode) === */
+.overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(6px);
+  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  text-align: center;
+}
+
+.overlay h1 {
+  font-size: 2rem;
+  color: #9333ea;
+  font-weight: bold;
+  margin-top: 1rem;
+}
+
+.lock-icon {
+  font-size: 3.5rem;
+}
+
+/* === Gradient Text Utility === */
+.gradient-text {
+  background: linear-gradient(90deg, #9333ea, #f97316);
+  -webkit-text-fill-color: transparent;
+}
+
+/* === Header === */
+.membership-header {
+  padding: 4rem 2rem 2rem;
+  text-align: center;
+  max-width: 900px;
+  margin: auto;
+}
+
+.membership-header h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+}
+
+.membership-header p {
+  font-size: 1.1rem;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* === Section Styling === */
+.membership-section {
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.membership-section h2 {
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.membership-section ul {
+  list-style: none;
+  padding: 0;
+  max-width: 800px;
+  margin: auto;
+}
+
+.membership-section ul li {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+  text-align: left;
+  color: #333;
+}
+
+/* Alternate Background */
+.alt-bg {
+  background: #f9f9f9;
+}
+
+/* === Benefits Grid === */
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.benefit {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+.benefit h3 {
+  color: #f97316;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+/* === Pricing Section === */
+.pricing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.price-box {
+  flex: 1 1 280px;
+  max-width: 320px;
+  background: #fff;
+  border: 2px solid #9333ea;
+  border-radius: 12px;
+  padding: 2rem;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.price-box:hover {
+  transform: translateY(-6px);
+}
+
+.price-box h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+  color: #9333ea;
+}
+
+.price-box .price {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #f97316;
+  margin: 1rem 0;
+}
+
+.price-box ul {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+}
+
+.price-box ul li {
+  margin: 0.6rem 0;
+  font-size: 1rem;
+  color: #333;
+}
+
+/* === FAQ === */
+.faq {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.faq h3 {
+  font-size: 1.2rem;
+  color: #9333ea;
+  margin-bottom: 0.5rem;
+}
+
+.faq p {
+  color: #444;
+  line-height: 1.5;
+}
+

@@ -1,0 +1,150 @@
+/* Navbar container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 30px;
+  background-color: white;
+  border: 1px solid #d1d5db;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  position: relative;
+  z-index: 1000;
+}
+
+/* Logo */
+.navbar-logo img {
+  height: 45px;
+}
+
+/* Desktop links */
+.navbar-links.desktop {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  margin: 0;
+}
+
+.navbar-links.desktop li a {
+  text-decoration: none;
+  font-size: 0.95rem;
+  color: black;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-links.desktop li a:hover {
+  color: #2563eb;
+}
+
+/* Get Started Button */
+.navbar-button {
+  display: flex;
+}
+
+.navbar-button a {
+  text-decoration: none;
+  background: linear-gradient(90deg, #9333ea, #f97316);
+  color: white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: opacity 0.3s ease;
+}
+
+.navbar-button a:hover {
+  opacity: 0.9;
+}
+
+/* Hamburger */
+.navbar-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: #333;
+  position: absolute;
+  top: 18px;
+  right: 25px;
+  z-index: 1100; /* stays above mobile menu */
+}
+
+/* ✅ Hide mobile links by default */
+.navbar-links.mobile {
+  display: none;
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+@media (max-width: 768px) {
+  /* Hide desktop links + button */
+  .navbar-links.desktop,
+  .navbar-button {
+    display: none;
+  }
+
+  /* Show hamburger */
+  .navbar-toggle {
+    display: block;
+  }
+
+  /* Mobile menu */
+  .navbar-links.mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -100%; /* start hidden */
+    width: 75%;
+    max-width: 280px;
+    height: 100%;
+    background-color: white;
+    padding: 80px 20px 20px;
+    border-left: 1px solid #ddd;
+    box-shadow: -2px 0 8px rgba(0, 0, 0, 0.1);
+    transition: right 0.4s ease-in-out;
+    z-index: 1050;
+  }
+
+  /* Slide in */
+  .navbar-links.mobile.open {
+    right: 0;
+  }
+
+  /* Centered links with dividers */
+  .navbar-links.mobile li {
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-links.mobile li a {
+    font-size: 1.1rem;
+    padding: 15px 0;
+    display: block;
+    border-bottom: 1px solid #e5e7eb;
+    transition: background 0.3s ease;
+    text-decoration: none;
+    font-size: 0.95rem;
+    color: black;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .navbar-links.mobile li:last-child a {
+    border-bottom: none;
+  }
+
+  .navbar-links.mobile li a:hover {
+    background: #f3f4f6;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-links.mobile {
+    width: 100%;
+    max-width: 100%;
+  }
+}

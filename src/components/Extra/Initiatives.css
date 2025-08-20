@@ -1,0 +1,49 @@
+.initiatives-section {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.initiatives-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #111827; /* Gray-900 */
+}
+
+.initiatives-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .initiatives-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.initiative-card {
+  background-color: #f3f4f6; /* Gray-100 */
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-5px);
+}
+
+.initiative-card h3 {
+  font-size: 1.5rem;
+  color: #2563eb; /* Blue-600 */
+  margin-bottom: 0.75rem;
+}
+
+.initiative-card p {
+  font-size: 1rem;
+  color: #4b5563; /* Gray-600 */
+  line-height: 1.6;
+}

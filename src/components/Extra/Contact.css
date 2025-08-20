@@ -1,0 +1,49 @@
+.membership-section {
+  padding: 5rem 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership-heading {
+  font-size: 2.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+  text-align: center;
+}
+
+.membership-subheading {
+  color: #4b5563; /* Gray-600 */
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1.125rem;
+}
+
+.membership-grid {
+  display: grid;
+  gap: 3rem;
+}
+
+@media (min-width: 768px) {
+  .membership-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+.membership-contact p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.highlight-text {
+  color: #16a34a; /* Green-600 */
+}
+
+.membership-map {
+  width: 100%;
+  height: 256px;
+  border-radius: 0.75rem; /* 12px */
+  border: 2px solid #3b82f6; /* Blue-500 */
+}

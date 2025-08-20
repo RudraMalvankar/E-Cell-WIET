@@ -1,0 +1,411 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.full-height {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px 20px;
+}
+
+/* ---------------- HERO ---------------- */
+.hero-section {
+  min-height: 85vh;
+  height: 70vh;
+  text-align: center;
+  padding: 5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; 
+  align-items: center;
+}
+
+.hero-heading {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+@media (min-width: 768px) {
+  .hero-heading {
+    font-size: 3.75rem;
+  }
+}
+
+.highlight {
+  color: #2563eb;
+}
+
+.hero-description {
+  margin-top: 1.5rem;
+  font-size: 1rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  padding: 0 1rem;
+}
+
+.hero-buttons {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-outline {
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+/* ---------------- INITIATIVES ---------------- */
+.initiatives-section {
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+.initiatives-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.initiatives-subtext {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.initiatives-grid {
+  display: grid;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .initiatives-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.initiative-card {
+  position: relative;
+  height: 350px;
+  border-radius: 12px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.initiative-card:hover {
+  transform: translateY(-6px);
+}
+
+.initiative-overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+}
+
+.initiative-content {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  right: 1.5rem;
+  text-align: left;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.initiative-card:hover .initiative-content {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.initiative-content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-decoration: underline;
+  color: #ffffff !important;
+}
+
+.initiative-content p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #ffffff !important;
+}
+
+/* ---------------- BLOGS ---------------- */
+.blogs-section.v2 {
+  background-color: #eef2f5;
+  padding: 3.5rem 1.25rem 2.25rem;
+  text-align: center;
+}
+
+.blogs-heading {
+  font-size: clamp(1.9rem, 1.2rem + 2.2vw, 2.8rem);
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 0.5rem;
+}
+
+.blogs-subheading {
+  max-width: 980px;
+  margin: 0 auto 1.75rem auto;
+  color: #6b7280;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+
+.blogs-rail {
+  display: flex;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding: 0.25rem 0.25rem 0.75rem;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.blogs-rail::-webkit-scrollbar {
+  height: 8px;
+}
+.blogs-rail::-webkit-scrollbar-track {
+  background: #e5e7eb;
+  border-radius: 10px;
+}
+.blogs-rail::-webkit-scrollbar-thumb {
+  background: #9ca3af;
+  border-radius: 10px;
+}
+.blogs-rail::-webkit-scrollbar-thumb:hover {
+  background: #6b7280;
+}
+
+.story-card {
+  flex: 0 0 auto;
+  min-width: 540px;
+  max-width: 560px;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.12);
+  scroll-snap-align: start;
+}
+
+.story-figure img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  display: block;
+  border-top-left-radius: 14px;
+  border-top-right-radius: 14px;
+}
+
+.story-caption {
+  background: #ffffff;
+  padding: 0.9rem 1.1rem 1.1rem;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 14px;
+}
+
+.story-title {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #111827;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* ---------------- ABOUT ---------------- */
+.about-section {
+  background-color: transparent;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.about-img-home {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image-aboutus {
+  max-width: 100%;
+  width: 420px;
+  border-radius: 20px;
+  box-shadow: 2px 2px 15px rgba(0,0,0,0.3);
+}
+
+.about-content {
+  flex: 1;
+  max-width: 600px;
+  text-align: left;
+}
+
+.about-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.about-description {
+  font-size: 1rem;
+  color: #4b5563;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
+}
+
+.about-content .btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  background: linear-gradient(90deg, #9333ea, #f97316);
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.about-content .btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.25);
+}
+
+/* ---------------- MEMBERSHIP ---------------- */
+.membership-section {
+  padding: 3rem 1rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.membership-heading {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #111827;
+  text-align: center;
+}
+
+.membership-subheading {
+  color: #4b5563;
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 1rem;
+  padding: 0 1rem;
+}
+
+.membership-grid {
+  display: grid;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .membership-grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+.membership-contact p {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #374151;
+  word-break: break-word;
+}
+
+.membership-map {
+  width: 100%;
+  height: 200px;
+  border-radius: 0.75rem;
+  border: 2px solid #3b82f6;
+}
+
+@media (min-width: 768px) {
+  .membership-map {
+    height: 256px;
+  }
+}
+
+/* ---------------- RESPONSIVE ---------------- */
+
+/* Small devices */
+@media (max-width: 640px) {
+  .hero-heading { font-size: 1.8rem; }
+  .hero-description { font-size: 0.9rem; }
+  .hero-buttons { gap: 0.5rem; flex-direction: column; }
+
+  .initiative-card { height: 280px; }
+  .initiative-content h3 { font-size: 1.1rem; }
+  .initiative-content p { font-size: 0.85rem; }
+
+  .story-card { min-width: 85vw; max-width: 85vw; }
+  .story-figure img { height: 200px; }
+
+  .about-section { flex-direction: column; text-align: center; gap: 1.5rem; }
+  .about-content { text-align: center; }
+  .image-aboutus { width: 90%; }
+  .about-heading { font-size: 1.6rem; }
+  .about-description { font-size: 0.9rem; }
+
+  .membership-contact p { font-size: 0.9rem; }
+}
+
+/* Medium devices */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .hero-heading { font-size: 2.75rem; }
+  .hero-description { font-size: 1rem; }
+
+  .initiative-card { height: 300px; }
+  .initiative-content h3 { font-size: 1.15rem; }
+  .initiative-content p { font-size: 0.9rem; }
+
+  .story-card { min-width: 70%; }
+  .story-figure img { height: 240px; }
+
+  .about-section { flex-direction: row; text-align: left; gap: 2rem; }
+  .about-heading { font-size: 1.85rem; }
+  .about-description { font-size: 0.95rem; }
+}
+
+/* Large devices */
+@media (min-width: 1025px) {
+  .hero-heading { font-size: 3.75rem; }
+  .hero-description { font-size: 1.1rem; }
+
+  .initiative-card { height: 350px; }
+  .initiative-content h3 { font-size: 1.25rem; }
+  .initiative-content p { font-size: 0.95rem; }
+
+  .story-card { min-width: 540px; }
+  .story-figure img { height: 280px; }
+
+  .about-heading { font-size: 2rem; }
+  .about-description { font-size: 1rem; }
+}

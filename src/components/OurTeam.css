@@ -1,0 +1,317 @@
+/* General */
+.ourteam-container {
+  font-family: Arial, sans-serif;
+  color: #000;
+  width: 100%;
+}
+
+/* Name Styling */
+.member-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Social Icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.linkedin-icon,
+.instagram-icon {
+  font-size: 24px;
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.linkedin-icon {
+  color: #0a66c2;
+}
+.linkedin-icon:hover {
+  color: #004182;
+  transform: scale(1.2);
+}
+
+.instagram-icon {
+  color: #e4405f;
+}
+.instagram-icon:hover {
+  color: #b9314f;
+  transform: scale(1.2);
+}
+
+/* Advisors Section */
+.advisors-section {
+  text-align: center;
+  padding: 40px;
+}
+
+#Advisors-Faculty {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+/* Advisors Grid - exactly 4 per row on desktop */
+.advisors-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 per row */
+  gap: 40px;
+  margin-top: 30px;
+  justify-items: center;
+}
+
+.advisor-card {
+  text-align: center;
+  width: 220px; /* can adjust if needed */
+}
+
+/* Avatar Styling for Advisors (already shared in main avatar CSS) */
+/* Reuse .avatar class for all avatars */
+
+/* Responsive for tablets */
+@media (max-width: 1024px) {
+  .advisors-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 20px;
+  }
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .advisors-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+    gap: 15px;
+  }
+}
+
+
+/* Students Section */
+.students-section {
+  text-align: center;
+  padding: 40px;
+}
+
+#Team-Student {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+/* Students Grid - exactly 4 per row */
+.students-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* exactly 4 per row */
+  gap: 40px;
+  margin-top: 30px;
+}
+
+/* Student Card */
+.student-card {
+  text-align: center;
+}
+
+/* Developers Section */
+.developers-section {
+  text-align: center;
+  padding: 40px;
+}
+
+#Team-Developers {
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+/* Avatar */
+.avatar {
+  width: 200px;
+  height: 200px;
+  background-color: #ccc !important;
+  border-radius: 50%;
+  margin: 0 auto 10px;
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+.show-avatar {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsive Tweaks */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .students-grid,
+  .developers-section .students-grid {
+    grid-template-columns: repeat(2, 1fr); /* 2 per row */
+    gap: 20px;
+  }
+  .advisors-grid {
+    gap: 20px;
+  }
+  .avatar {
+    width: 150px;
+    height: 150px;
+  }
+  .member-name {
+    font-size: 18px;
+  }
+  .linkedin-icon,
+  .instagram-icon {
+    font-size: 22px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .students-grid,
+  .developers-section .students-grid {
+    grid-template-columns: 1fr; /* 1 per row */
+    gap: 15px;
+  }
+  .avatar {
+    width: 120px;
+    height: 120px;
+  }
+  .member-name {
+    font-size: 16px;
+  }
+  .linkedin-icon,
+  .instagram-icon {
+    font-size: 20px;
+  }
+}
+
+.avatar.atharv-khetale {
+  background-image: url('/images/atharv.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.rudra-malvankar {
+  background-image: url('../assets/Rudra Malvankar.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.prof-chaitali-godse{
+  background-image: url('../assets/Prof.Chaitali Mam.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.prof-sangharsh-syal{
+  background-image: url('../assets/Prof.Sangharsh Syal.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.kashvi-kandalkar{
+  background-image: url('../assets/Kashvi Kandalkar.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.prof-nilima-mhatre{
+  background-image: url('../assets/Prof.Nilima Mam.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.prof-priyanka-shinde{
+  background-image: url('../assets/Prof. Priyanka Mam.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.soham-shimpi{
+  background-image: url('../assets/Soham Shimpi.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.pranav-tiwari{
+  background-image: url('../assets/Pranav Tiwari.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.ariba-gazi{
+  background-image: url('../assets/Ariba Gazi.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.parth-shinde{
+  background-image: url('../assets/Parth Shinde.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.afifa-walvatkar{
+  background-image: url('../assets/Afifa Walvatkar.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.sujal-maurya{
+  background-image: url('../assets/Sujal Maurya.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.vishal-moota{
+  background-image: url('../assets/Vishal Moota.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.pranay-pandey{
+  background-image: url('../assets/Pranay Pandey.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.adarshkumar-singh{
+  background-image: url('../assets/Adarshkumar Singh.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.rasika-shinde{
+  background-image: url('../assets/Rasika Shinde.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.praneet-poojary{
+  background-image: url('../assets/Praneet Poojary.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.atharv-khetale{
+  background-image: url('../assets/Atharv Khetale.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.avatar.shivam-pandey{
+  background-image: url('../assets/Shivam Pandey.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+/* Repeat for all avatars */
+
