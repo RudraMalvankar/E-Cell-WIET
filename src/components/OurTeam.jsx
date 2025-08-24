@@ -69,13 +69,13 @@ export default function OurTeam() {
             ["Rasika Shinde", "Vice President","rasika-shinde", "https://www.linkedin.com/in/rasika-shinde-895440346/", "https://www.instagram.com/rasika_0619?igsh=MWNxczNzZ3I1emsxYQ=="], 
             ["Rudra Malvankar", "Technical Head", "rudra-malvankar","https://www.linkedin.com/in/rudra-malvankar/", "https://www.instagram.com/rudra.builds"],
             ["Sujal Maurya", "Technical Co-Head", "sujal-maurya","https://www.linkedin.com/in/sujal-maurya-68234434b/", ""],
-            ["Shivam Pandey", "Media Head", "shivam-pandey","https://linkedin.com/in/shivampandey", "https://www.instagram.com/shivam_py12/?hl=en"], 
+            ["Shivam Pandey", "Media Head", "shivam-pandey","https://www.linkedin.com/in/shivam-pandey-a33265258/", "https://www.instagram.com/shivam_py12/?hl=en"], 
             ["Soham Shimpi", "Media Co-Head", "soham-shimpi","https://www.linkedin.com/in/soham11/", "https://www.instagram.com/__soham__19/"], 
             ["Pranav Tiwari", "Media Co-Head", "pranav-tiwari","https://www.linkedin.com/in/pranav-tiwari-7ab693347/", "https://www.instagram.com/___vichitra_prani__"], 
             ["Praneet Poojary", "Treasurer", "praneet-poojary","https://www.linkedin.com/in/p-praneet/", "https://www.instagram.com/_.nothingmatters4/"],
             ["Kashvi Kandalkar", "Treasurer","kashvi-kandalkar","https://www.linkedin.com/in/kashvi-kandalkar/", "https://www.instagram.com/____kashkan____?igsh=b29xcWp2ODZ1Njc5/"],
             ["Adarshkumar Singh", "Event Co-ordinator", "adarshkumar-singh","https://www.linkedin.com/in/adarshkumar-singh-43b014271/", "https://www.instagram.com/agentadarsh?igsh=bXVvZmQ0dW11bms="],
-            ["Parth Shinde", "Event Co-ordinator", "parth-shinde","https://linkedin.com/in/parthshinde", "https://www.instagram.com/_parthshinde?igsh=OTA0dW9jb3ExenI3"],
+            ["Parth Shinde", "Event Co-ordinator", "parth-shinde","", "https://www.instagram.com/_parthshinde?igsh=OTA0dW9jb3ExenI3"],
             ["Ariba Gazi", "Event Co-ordinator", "ariba-gazi","https://www.linkedin.com/in/ariba-gazi-51111a311/", "https://www.instagram.com/nerdyy_gabby/profilecard/?igsh=MTB1ZGd5Yngxa3Y4Mg=="]
                     ].map(([name, role, className, link, insta], i) => (
             <div className="student-card" key={i}>
@@ -107,8 +107,8 @@ export default function OurTeam() {
         </p>
         <div className="students-grid">
           {[
-            ["Shivam Pandey", "UI/UX Designer", "shivam-pandey", "https://linkedin.com/in/pranaypandey", "https://www.instagram.com/shivam_py12/?hl=en"],
-            ["Soham Shimpi", "Developer", "soham-shimpi", "https://linkedin.com/in/aryansharma", "https://www.instagram.com/__soham__19/"],
+            ["Shivam Pandey", "UI/UX Designer", "shivam-pandey", "https://www.linkedin.com/in/shivam-pandey-a33265258/", "https://www.instagram.com/shivam_py12/?hl=en"],
+            ["Soham Shimpi", "Developer", "soham-shimpi", "https://www.linkedin.com/in/soham11/", "https://www.instagram.com/__soham__19/"],
             ["Vishal Moota", "Developer", "vishal-moota", "https://www.linkedin.com/in/vishal-moota/", ""],
             ["Pranay Pandey", "Developer", "pranay-pandey", "https://www.linkedin.com/in/pranay-pandey-aa3b56271/", "https://www.instagram.com/pranay_25114/"],
           ].map(([name, role, className, link, insta], i) => (

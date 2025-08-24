@@ -14,6 +14,10 @@ import {createBrowserRouter,RouterProvider} from 'react-router-dom'
 import Blogs from './components/Blogs';
 import Membership from './components/Membership';
 import ScrollToTop from "./components/Scroll/ScrollToTop";
+<<<<<<< HEAD
+=======
+import ViewBlogs from "./components/ViewBlog"
+>>>>>>> 81b1e4c (Added new blog page and updated existing content)
 
 
 
@@ -79,6 +83,18 @@ function App() {
           <Membership></Membership>
           <Footer></Footer>
         </div>
+<<<<<<< HEAD
+=======
+      },
+      {
+        path:'/viewblogs',
+        element:
+        <div>
+          <Navbar></Navbar>
+          <ViewBlogs></ViewBlogs>
+          <Footer></Footer>
+        </div>
+>>>>>>> 81b1e4c (Added new blog page and updated existing content)
       }
     ]
   )

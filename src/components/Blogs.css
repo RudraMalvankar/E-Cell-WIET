@@ -56,10 +56,19 @@
   justify-content: center;
   margin: 0 auto;
   transition: background 0.3s;
+<<<<<<< HEAD
 }
 
 .view-btn:hover {
   background:linear-gradient(90deg, #9333ea, #f97316);
+=======
+  text-decoration: none;
+}
+
+.view-btn:hover {
+  background: linear-gradient(90deg, #9333ea, #f97316);
+  text-decoration: none;
+>>>>>>> 81b1e4c (Added new blog page and updated existing content)
 }
 
 .view-btn .arrow {
@@ -67,6 +76,7 @@
   font-weight: bold;
 }
 
+<<<<<<< HEAD
 /* Locked overlay with blur */
 .locked-overlay {
   position: absolute;
@@ -115,6 +125,8 @@
   margin-top: 1rem;
 }
 
+=======
+>>>>>>> 81b1e4c (Added new blog page and updated existing content)
 /* Responsive */
 @media (max-width: 1200px) {
   .blogs-grid {
@@ -136,6 +148,7 @@
   .blog-card img {
     height: 180px;
   }
+<<<<<<< HEAD
 
   .lock-icon {
     font-size: 2.5rem;
@@ -144,4 +157,6 @@
   .locked-message h1 {
     font-size: 1.2rem;
   }
+=======
+>>>>>>> 81b1e4c (Added new blog page and updated existing content)
 }
