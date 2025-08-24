@@ -1,14 +1,14 @@
 .blog-container {
-  background: #f9fafb; /* soft white background */
+  background: #f9fafb;
   color: #333;
   font-family: "Arial", sans-serif;
   line-height: 1.8;
   padding: 40px 20px;
 }
 
-.banner-img{
-  height:400px;
-  width:400px !important;
+.banner-img {
+  height: 400px;
+  width: 400px !important;
 }
 
 .blog-content {
@@ -67,8 +67,8 @@
 }
 
 .blog-section img {
-  height:400px;
-  width:300px !important;
+  height: 400px;
+  width: 300px !important;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
@@ -76,19 +76,11 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-#image-requirements {
-  height:400px;
-  width:800px!important;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 100%;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
+/* Large images */
+#image-requirements,
 #image-startup {
-  height:400px;
-  width:800px!important;
+  height: 400px;
+  width: 800px !important;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
@@ -96,19 +88,10 @@
   box-shadow: 0 6px 12px rgba(0,0,0,0.1);
 }
 
-#image-revenue {
-  height:400px;
-  width:500px!important;
-  display: block;
-  margin: 20px auto;
-  border-radius: 10px;
-  max-width: 100%;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.1);
-}
-
+#image-revenue,
 #image-customer {
-  height:400px;
-  width:500px!important;
+  height: 400px;
+  width: 500px !important;
   display: block;
   margin: 20px auto;
   border-radius: 10px;
@@ -141,4 +124,84 @@
 .blog-footer p {
   max-width: 800px;
   margin: 0 auto;
+}
+
+/* ---------------- RESPONSIVENESS ---------------- */
+
+/* Tablets */
+@media (max-width: 992px) {
+  .banner-img {
+    height: 300px;
+    width: 300px !important;
+  }
+
+  .blog-hero h1 {
+    font-size: 2rem;
+  }
+
+  .blog-hero .subtitle {
+    font-size: 1rem;
+  }
+
+  .blog-section h2 {
+    font-size: 1.5rem;
+  }
+
+  #image-requirements,
+  #image-startup,
+  #image-revenue,
+  #image-customer {
+    width: 100% !important;
+    height: auto;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .blog-container {
+    padding: 20px 10px;
+  }
+
+  .blog-content {
+    padding: 15px;
+  }
+
+  .banner-img {
+    height: auto;
+    width: 100% !important;
+  }
+
+  .blog-hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .blog-hero .subtitle {
+    font-size: 0.9rem;
+  }
+
+  .blog-section {
+    padding: 15px;
+  }
+
+  .blog-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .blog-section img,
+  #image-requirements,
+  #image-startup,
+  #image-revenue,
+  #image-customer {
+    width: 100% !important;
+    height: auto;
+  }
+
+  .highlight-quote {
+    font-size: 1rem;
+    padding: 15px;
+  }
+
+  .blog-footer p {
+    font-size: 0.9rem;
+  }
 }
